@@ -90,13 +90,13 @@ int knn(int k, int etiquetas, int tam_fil, int tam_col) {//metodo que realiza el
     }//fin de la condicion de lectura y ordenamiento 
     sum = 0;
   }//fin de lectura de matriz
-//  for (int i = 0; i < k; i++) {//impresion de matriz k
-//    Serial.print(matriz_k[0][i]);
-//    Serial.print('-');
-//    Serial.print(matriz_k[1][i]);
-//    Serial.print('-');
-//    Serial.println(matriz_k[2][i]);
-//  }
+  for (int i = 0; i < k; i++) {//impresion de matriz k
+    Serial.print(matriz_k[0][i]);
+    Serial.print('-');
+    Serial.print(matriz_k[1][i]);
+    Serial.print('-');
+    Serial.println(matriz_k[2][i]);
+  }
   for (i = 0; i < etiquetas; i++) {//Asignacion de las etiquetas para la matriz_etiq
     matriz_etiq[1][i] = matriz_k[1][i];
   }
