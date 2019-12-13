@@ -1,0 +1,32 @@
+\BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Marco Te\363rico}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Node MCU}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Sensor de PH}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Sensor de temperatura de agua}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Sensor TDS conductividad}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Sensor de Turbidez \(NTU\)}{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Desarrollo}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Diagrama de Bloques }{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Calibraci\363n de sensores }{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Calibraci\363n de Sensor de PH}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Calibraci\363n de Sensor de temperatura}{subsection.3.2}% 12
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Calibraci\363n de Sensor TDS}{subsection.3.2}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Calibraci\363n de Sensor NTU}{subsection.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.3}{Dise\361o esquem\341tico y PCB del circuito para la obtenci\363n de datos}{section.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Dise\361o del circuito en Eagle}{subsection.3.3}% 16
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Dise\361o del circuito en Fritzing}{subsection.3.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Elaboraci\363n de la placa PCB}{subsection.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.4}{Toma de datos}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.5}{Suavizado de datos mediante algoritmos matem\341ticos}{section.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.5.1}{Algoritmo de Kalman}{subsection.3.5}% 21
+\BOOKMARK [3][-]{subsubsection.3.5.2}{Algoritmo Median}{subsection.3.5}% 22
+\BOOKMARK [3][-]{subsubsection.3.5.3}{Algoritmo Mean}{subsection.3.5}% 23
+\BOOKMARK [2][-]{subsection.3.6}{Resultados del suavizado de datos}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Algoritmo de Kalman}{subsection.3.6}% 25
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Algoritmo Median}{subsection.3.6}% 26
+\BOOKMARK [3][-]{subsubsection.3.6.3}{Algoritmo Mean}{subsection.3.6}% 27
+\BOOKMARK [2][-]{subsection.3.7}{Errores}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.8}{Relaci\363n Se\361al Ruido}{section.3}% 29
+\BOOKMARK [1][-]{section.4}{An\341lisis de Resultados}{}% 30
+\BOOKMARK [1][-]{section.5}{Conclusiones y Recomendaciones}{}% 31
+\BOOKMARK [1][-]{section.6}{Anexos }{}% 32
