@@ -3,7 +3,7 @@ void setup() {
   Serial.begin(9600);
 }
 void loop() {
-  int temperatura[90];
+  int temperatura[88];
   int i, j, k, temp;
   int tamano = 3;
   int vector[3];

@@ -1,4 +1,4 @@
-float temperatura[90]={
+float datosprueba[90]={
 26,
 26.06,
 26.06,
@@ -89,4 +89,4 @@ float temperatura[90]={
 26.62,
 26.5,
 26.5
-};
+}
