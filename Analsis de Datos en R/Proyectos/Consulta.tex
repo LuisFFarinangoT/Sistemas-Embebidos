@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath, amsbsy, amssymb, amsthm, amsfonts}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{afterpage}
+\usepackage{float}
+\usepackage{epstopdf}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{epigraph} 
+\setlength\epigraphwidth{1.5\textwidth}
+\usepackage{subfigure}
+\usepackage{anyfontsize}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Programa}% Listing -> Programa
+\renewcommand{\lstlistlistingname}{List of \lstlistingname s}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[colorlinks=true,
+            linkcolor=blue,
+            citecolor=blue,
+            urlcolor=blue]{hyperref}
+\input{arduinoLanguage.tex}
+
+\begin{document}
+\author{Benavides Wilmer, Farinango Luis, Velasco Angel}
+\title{UNIVERSIDAD TÉCNICA DEL NORTE \\
+FICA-CIERCOM\\
+SISTEMAS EMBEBIDOS\\
+CALIDAD DEL AGUA }
+\maketitle
+\section{Introducción}
+\section{Marco Teórico}
+\subsection{Matriz de Confusión}
+\subsection{Curva ROC}
+Una curva ROC proporciona una representación de la sensibilidad y especifidad para cada valor umbral ,que es invariante mediante transformaciones monótonas a los datos de la variable de decisión y que permite comparar dos o más clasificadores en función de su función discriminante.
+Un análisis ROC de sus siglas en ingles Receiver operating characteristics, es una metodología desarrollada para analizar un sistema de decisión. Este análisis se basa en las nociones de sensibilidad y especificidad.\\
+Una curva ROC proporciona una representación de la sensibilidad generalmente ubicada en el eje de las “y” ,es decir se muestra los verdaderos positivos.
+\begin{equation}
+ \frac{(VP)}{ (VP)+  (FN)}
+\end{equation}
+Donde VP es el número de verdaderos positivos,FN es el número de falsos negativos.\\
+La especificidad se ubica en el eje de las “x” y representa los falsos positivos .
+\begin{equation}
+ \frac{(FP)}{ (FP)+  (VN)}
+\end{equation}
+Donde FP es el número de falsos positivos,VN es el número de verdaderos negativos.\\
+La curva basa sus dos valores sen función de cada valor umbral ,que es invariante mediante transformaciones monótonas a los datos de la variable de decisión y que permite comparar dos o más clasificadores en función de su función discriminante.
+Además, en la curva ROC cada uno de los puntos representa un par de sensibilidad/especificidad correspondiente a un umbral de decisión particular.
+
+\subsection{Medición AUC}
+\section{Desarrollo}
+\subsection{Matriz de Confusión}
+\subsection{Curva ROC}
+La curva ROC en el entorno de R necesita de un análisis previo que debe dar como resultado u n conjunto de datos binarios ,dado que la función solo acepta este tipo de datos. Para el ejemplo se ha utilizado un análisis de RandomForest.
+Se ha estudiado la varaiable temperatura,para lograr la obtención de la curva ROC se ha dado un umbral de un temperatura de 15 grados celsius.Si se sobrepasa dicha temperatura entonces la base de datos cambiara a al número 1.
+Partiendo de este concepto se aplica el algoritmo de clasificación antes mencionado.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{ROC.png}
+\caption{Codígo en R para el desarrollo de la Curva ROC}
+\label{esquematic}
+\end{figure}
+\subsection{Medición AUC}
+\section{Análisis de Resultados}
+Para el caso de la curva ROC se obtuvo la siguente gráfica,cabe recalcar que se analizo la temperetuara inicialmente.\\
+En este caso se observa que el algoritmo de clasificacion que se utilizo como ejemplo no es muy efectivo ya que para que un algoritmo sea efectivo la curva se debe acercar lo mayor posible a la izquierda 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.48]{curva.png}
+\caption{Curva ROC obtenida de la variable temperatura}
+\label{esquematic}
+\end{figure}
+\section{Conclusiones y Recomendaciones}
+
+\subsection*{Conclusiones}
+\begin{itemize}
+\item La curva ROC es un método que puede determinar la efectividad de un algoritmo de clasificación ,entre mas cerca de la izquierda esta ubicada dicha curva más efectivo es el algoritmo de clasificación.
+\end{itemize}
+
+\subsection*{Recomendaciones}
+\begin{itemize}
+\renewcommand{\labelitemi}{$*$}
+\item 
+\end{itemize}
+
+\section{Anexos }
+
+
+
+\bibliographystyle{ieeetran}%estilo referencia
+\bibliography{Referencias}%archivo.bib
+\end{document}
